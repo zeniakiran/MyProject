@@ -7,7 +7,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "echo \"[Husky] pre-commit\" ",
+      "pre-commit": "npm i axios",
       "pre-push": "npm run hooks:pre-push"
     }
   },
