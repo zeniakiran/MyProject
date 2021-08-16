@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "lint" : "eslint . --ext .ts"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm i axios",
+      "pre-commit": "npm run lint",
       "pre-push": "npm run hooks:pre-push"
     }
   },
