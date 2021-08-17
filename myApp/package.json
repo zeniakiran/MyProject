@@ -4,12 +4,12 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "lint" : "eslint . --ext .ts"
+    "lint": "eslint . --ext .ts"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint",
-      "pre-push": "npm run hooks:pre-push"
+      "pre-commit": "echo \"[Husky] pre-commit\"",
+      "pre-push": "echo \"[Husky] post-commit\""
     }
   },
   "dependencies": {
@@ -28,7 +28,7 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "husky": "^7.0.1",
+    "husky": "^4.3.8",
     "prettier": "2.3.2"
   }
 }
